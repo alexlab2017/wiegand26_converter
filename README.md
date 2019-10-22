@@ -10,7 +10,7 @@ only reads the cards and sends data (using Wiegand 26 protocol) to a controller
 relay board that is network connected. Installed on a PC, there is a software
 used to manage users, time schedules and so on.
 
-I noticed that the card number is not the same that I see in the software. Ii
+I noticed that the card number is not the same that I see in the software. It
 seems that the number gets changed between the reader and controller board.
 
 ## More data
@@ -65,7 +65,7 @@ that can be converted to integer) is passed to the main functions.
 There is a class for the GUI. I decided not to inherit from `tkinter.Frame` as
 I saw quite often in the documentation. I opted also to initialize my root
 element `tkinter.Tk` inside the class without inheriting from it or defining it
-outside the class. In this way I have a clean and Namespace to deal with my
+outside the class. In this way I have a clean Namespace to deal with my
 variables and all the GUI stuff "all in one" but within separated variables.
 This may be an issue if you want to implement this GUI inside an existing
 application, anyway, having just one window, makes this setup ok for me and is
